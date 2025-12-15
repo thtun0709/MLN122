@@ -209,6 +209,8 @@ function Home() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
+                        style={{color: '#388e3c'}}
+                        
                     >
                         Đặt vấn đề lý luận
                     </motion.h2>
@@ -258,7 +260,7 @@ function Home() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                        <h4>Vấn đề nghiên cứu</h4>
+                        <h4 >Vấn đề nghiên cứu</h4>
                         <p>
                             Bài viết phân tích sự biến đổi của độc quyền từ <strong>dầu mỏ</strong> (thế kỷ XX)
                             sang <strong>dữ liệu</strong> (thế kỷ XXI), làm rõ bản chất giai cấp, mâu thuẫn cơ bản
@@ -348,8 +350,8 @@ function Home() {
                         transition={{ duration: 0.6 }}
                     >
                         <p>
-                            Các hình thức <strong>Concern</strong> và{" "}
-                            <strong>Conglomerate</strong> trở thành mô hình tổ chức chủ yếu
+                            Các hình thức <strong style={{color: '#d4af37'}}>Concern</strong> và{" "}
+                            <strong style={{color: '#d4af37'}}>Conglomerate</strong> trở thành mô hình tổ chức chủ yếu
                             của các tập đoàn công nghệ. Amazon là một Concern đa ngành, còn
                             Alphabet là Conglomerate kết nối các lĩnh vực không liên hệ trực
                             tiếp về kỹ thuật nhưng thống nhất bởi dòng vốn tài chính.
@@ -381,6 +383,7 @@ function Home() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
+                        style={{color: '#388e3c'}}
                     >
                         Vai trò mới của tư bản tài chính
                     </motion.h2>
@@ -395,7 +398,7 @@ function Home() {
                                 transition={{ duration: 0.6 }}
                             >
                                 <div className="financial-icon">💰</div>
-                                <h4>Ngân hàng Bóng đêm</h4>
+                                <h4  style={{color: '#D4AF37'}}>Ngân hàng Bóng đêm</h4>
                                 <p>
                                     Apple nắm giữ <strong>$162 tỷ USD tiền mặt</strong> (2023),
                                     vượt dự trữ ngoại hối của nhiều quốc gia. Big Tech trở thành
@@ -413,7 +416,7 @@ function Home() {
                                 transition={{ duration: 0.6, delay: 0.1 }}
                             >
                                 <div className="financial-icon">📊</div>
-                                <h4>Cổ phiếu Đa tầng</h4>
+                                <h4 style={{color: '#D4AF37'}}>Cổ phiếu Đa tầng</h4>
                                 <p>
                                     Cơ chế <strong>Dual-class stock</strong> cho phép nhà sáng lập
                                     giữ quyền bỏ phiếu vượt trội. Mark Zuckerberg chỉ sở hữu 13% cổ phiếu
@@ -431,7 +434,7 @@ function Home() {
                                 transition={{ duration: 0.6, delay: 0.2 }}
                             >
                                 <div className="financial-icon">🏦</div>
-                                <h4>Tích hợp Tài chính</h4>
+                                <h4 style={{color: '#D4AF37'}}> Tích hợp Tài chính</h4>
                                 <p>
                                     Google Pay, Apple Pay, Amazon Pay thâm nhập thanh toán số.
                                     <strong>Tư bản công nghiệp và tư bản tài chính</strong> hợp nhất,
@@ -486,7 +489,7 @@ function Home() {
 
             <section className="content-section dark-section" id="market">
                 <div className="container">
-                    <motion.h2 className="section-title" whileInView={{ opacity: 1, y: 0 }}>
+                    <motion.h2 className="section-title" style={{color: '#388E3C'}} whileInView={{ opacity: 1, y: 0 }} >
                         Phân chia thị trường và lãnh thổ ảnh hưởng
                     </motion.h2>
 
@@ -517,44 +520,6 @@ function Home() {
                     </motion.div>
                 </div>
             </section>
-
-    {/* // Accordion for Export section */}
-    {/* function AccordionExport() {
-        const [open, setOpen] = useState([false, false]);
-        const toggle = idx => setOpen(open.map((v, i) => i === idx ? !v : v));
-        return (
-            <div className="accordion-export">
-                <motion.div className="accordion-item" initial={false} animate={{ borderColor: open[0] ? '#2a5298' : '#ccc' }}>
-                    <div className="accordion-title" onClick={() => toggle(0)}>
-                        <span>1. Thay đổi hướng vận động</span>
-                        <span>{open[0] ? '▲' : '▼'}</span>
-                    </div>
-                    <motion.div className="accordion-content" initial={false} animate={{ height: open[0] ? 'auto' : 0, opacity: open[0] ? 1 : 0 }} transition={{ duration: 0.4 }}>
-                        {open[0] && (
-                            <div>
-                                <b>Lý luận:</b> Dòng vốn không chỉ chảy từ nước phát triển sang nước kém phát triển, mà luân chuyển mạnh giữa các nước tư bản phát triển với nhau.<br />
-                                <b>Thực tiễn:</b> Google, Microsoft đầu tư hàng tỷ USD xây dựng Data Center tại Châu Âu (Đan Mạch, Phần Lan, Ireland). Đây là dòng vốn đầu tư giữa các nước giàu để khai thác hạ tầng và nhân lực chất lượng cao.
-                            </div>
-                        )}
-                    </motion.div>
-                </motion.div>
-                <motion.div className="accordion-item" initial={false} animate={{ borderColor: open[1] ? '#2a5298' : '#ccc' }}>
-                    <div className="accordion-title" onClick={() => toggle(1)}>
-                        <span>2. Thay đổi hình thức: Xuất khẩu "Nền tảng" và "Công nghệ"</span>
-                        <span>{open[1] ? '▲' : '▼'}</span>
-                    </div>
-                    <motion.div className="accordion-content" initial={false} animate={{ height: open[1] ? 'auto' : 0, opacity: open[1] ? 1 : 0 }} transition={{ duration: 0.4 }}>
-                        {open[1] && (
-                            <div>
-                                <b>Lý luận:</b> Gia tăng đầu tư trực tiếp (FDI), chuyển giao công nghệ, hình thành các chi nhánh của công ty xuyên quốc gia (TNCs).<br />
-                                <b>Thực tiễn:</b> Big Tech thực hiện "Xuất khẩu nền tảng". Facebook, Google, YouTube sang Việt Nam, Ấn Độ... Người dùng địa phương cung cấp "nguyên liệu thô" là dữ liệu hành vi, giá trị thặng dư được tạo ra từ xử lý dữ liệu này và bán lại quảng cáo.
-                            </div>
-                        )}
-                    </motion.div>
-                </motion.div>
-            </div>
-        );
-    } */}
 
 
             {/* ================= LIMITS ================= */}
@@ -587,16 +552,17 @@ function Home() {
                     </motion.div>
 
                     <div className="row mt-5">
-                        <div className="col-md-6">
+                        <div className="col-md-6" style={{color: '#388e3c'}}>
                             <motion.div
                                 className="limit-card"
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6 }}
+                                
                             >
                                 <div className="limit-number">01</div>
-                                <h4>🔒 Xâm phạm Quyền riêng tư</h4>
+                                <h4 style={{color: '#D4AF37'}}>🔒 Xâm phạm Quyền riêng tư</h4>
                                 <p>
                                     <strong>Cambridge Analytica scandal</strong> (2018): Dữ liệu của 87 triệu
                                     người dùng Facebook bị khai thác để thao túng bầu cử. Độc quyền dữ liệu
@@ -614,7 +580,7 @@ function Home() {
                                 transition={{ duration: 0.6 }}
                             >
                                 <div className="limit-number">02</div>
-                                <h4>🧠 Thao túng Hành vi Xã hội</h4>
+                                <h4 style={{color: '#D4AF37'}}>🧠 Thao túng Hành vi Xã hội</h4>
                                 <p>
                                     Thuật toán <strong>recommendation</strong> (YouTube, TikTok) tạo "filter bubble",
                                     phân cực xã hội, lan truyền tin giả. Độc quyền nền tảng kiểm soát
@@ -634,7 +600,7 @@ function Home() {
                                 transition={{ duration: 0.6, delay: 0.1 }}
                             >
                                 <div className="limit-number">03</div>
-                                <h4>⚖️ Bất bình đẳng Công nghệ</h4>
+                                <h4 style={{color: '#D4AF37'}}>⚖️ Bất bình đẳng Công nghệ</h4>
                                 <p>
                                     <strong>Digital divide</strong>: Khoảng cách giữa các quốc gia phát triển và
                                     đang phát triển. Big Tech của Mỹ-Trung thống trị toàn cầu, các nước khác
@@ -652,7 +618,7 @@ function Home() {
                                 transition={{ duration: 0.6, delay: 0.1 }}
                             >
                                 <div className="limit-number">04</div>
-                                <h4>🤖 Thất nghiệp do Tự động hóa</h4>
+                                <h4 style={{color: '#D4AF37'}}>🤖 Thất nghiệp do Tự động hóa</h4>
                                 <p>
                                     AI và robot thay thế lao động con người. <strong>McKinsey (2023)</strong>
                                     dự báo 800 triệu việc làm biến mất vào 2030. Lợi nhuận từ tự động hóa
@@ -669,7 +635,7 @@ function Home() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
-                        <h4>📌 Kết luận</h4>
+                        <h4 style={{color: '#e74c3c'}}>📌 Kết luận</h4>
                         <p>
                             Độc quyền dữ liệu là <strong>hình thức cao nhất và cuối cùng</strong> của chủ nghĩa tư bản độc quyền.
                             Những mâu thuẫn ngày càng sâu sắc chứng tỏ <em>"chủ nghĩa tư bản đã hết khả năng lãnh đạo xã hội loài người"</em>.

@@ -5,7 +5,7 @@
 }
 
 .page-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #d4af37 0%, #b0b0b0 100%); /* gold to silver */
   color: white;
   padding: 60px 0;
   margin-bottom: 3rem;
@@ -20,7 +20,7 @@
 .header-subtitle {
   font-size: 1.3rem;
   font-weight: 300;
-  color: #e8eaf6;
+  color: #d4af37; /* gold */
   margin: 0;
 }
 
@@ -33,11 +33,11 @@
 }
 
 .disclosure-section h2 {
-  color: #1e3c72;
+  color: #388e3c; /* finance green */
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  border-bottom: 3px solid #667eea;
+  border-bottom: 3px solid #d4af37; /* gold */
   padding-bottom: 0.5rem;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .tool-header.chatgpt {
-  background: linear-gradient(135deg, #10a37f 0%, #1a7f64 100%);
+  background: linear-gradient(135deg, #388e3c 0%, #d4af37 100%); /* green to gold */
 }
 
 .tool-header.claude {
@@ -93,9 +93,10 @@
 
 .tool-header h3 {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0;
-  color: white;
+  color: #388e3c; /* finance green */
+  text-shadow: 1px 1px 2px rgba(212,175,55,0.10); /* gold shadow */
 }
 
 .tool-badge {
@@ -112,11 +113,12 @@
 }
 
 .tool-content h4 {
-  color: #1e3c72;
+  color: #d4af37; /* gold */
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(56,142,60,0.08);
 }
 
 .tool-content h4:first-child {
@@ -198,10 +200,11 @@
 }
 
 .methodology-item h4 {
-  color: #1e3c72;
+  color: #388e3c; /* finance green */
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(212,175,55,0.08);
 }
 
 .methodology-item p {
@@ -257,6 +260,8 @@
   
   .tool-header h3 {
     font-size: 1.5rem;
+    color: #388e3c;
+    text-shadow: 1px 1px 2px rgba(212,175,55,0.08);
   }
   
   .disclosure-section,
