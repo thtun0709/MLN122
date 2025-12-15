@@ -1,0 +1,245 @@
+.suggestions-page {
+  padding-top: 56px; /* Account for fixed navbar */
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 60px 0;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.header-subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #fff5f5;
+  margin: 0;
+}
+
+.introduction-section {
+  margin-bottom: 3rem;
+}
+
+.intro-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  border-left: 5px solid #f5576c;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.intro-box p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #333;
+  margin: 0;
+}
+
+/* Main Content */
+.suggestions-content {
+  margin-bottom: 3rem;
+}
+
+.main-section-title {
+  color: #1e3c72;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #f5576c;
+}
+
+/* Suggestion Blocks */
+.suggestion-block {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.suggestion-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+}
+
+.suggestion-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.suggestion-number {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.suggestion-header h3 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+
+.suggestion-content {
+  padding: 2.5rem;
+}
+
+.suggestion-content h4 {
+  color: #1e3c72;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.suggestion-content h4:first-child {
+  margin-top: 0;
+}
+
+.suggestion-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.suggestion-content ul li {
+  padding: 1rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  background: #f8f9fa;
+  border-left: 4px solid #667eea;
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.suggestion-content ul li:before {
+  content: "→";
+  position: absolute;
+  left: 0.5rem;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.suggestion-content ul li strong {
+  color: #1e3c72;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.suggestion-content > p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #495057;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(to right, #e8eaf6, #f3e5f5);
+  border-radius: 6px;
+  border-left: 4px solid #764ba2;
+  font-style: italic;
+}
+
+/* Conclusion Section */
+.conclusion-section {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.conclusion-section h2 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid rgba(255,255,255,0.3);
+}
+
+.conclusion-section p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #f0f4ff;
+  margin-bottom: 1.8rem;
+}
+
+.conclusion-section p:last-child {
+  margin-bottom: 0;
+}
+
+.final-statement {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  margin-top: 2rem !important;
+  color: #ffd700 !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .main-section-title {
+    font-size: 1.8rem;
+  }
+  
+  .suggestion-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+  
+  .suggestion-number {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.2rem;
+  }
+  
+  .suggestion-header h3 {
+    font-size: 1.4rem;
+  }
+  
+  .suggestion-content {
+    padding: 1.5rem;
+  }
+  
+  .intro-box,
+  .conclusion-section {
+    padding: 1.5rem;
+  }
+}
