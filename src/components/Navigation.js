@@ -60,6 +60,21 @@ function Navigation() {
               </button>
             </li>
             <li className="nav-item">
+              <button className="nav-link" onClick={() => scrollToSection('export')} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                Xuất khẩu
+              </button>
+            </li>
+            <li className="nav-item">
+              <button className="nav-link" onClick={() => scrollToSection('market')} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                Thị trường
+              </button>
+            </li>
+            <li className="nav-item">
+              <button className="nav-link" onClick={() => scrollToSection('state')} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                Độc quyền nhà nước
+              </button>
+            </li>
+            <li className="nav-item">
               <button className="nav-link" onClick={() => scrollToSection('limits')} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
                 Giới hạn
               </button>
